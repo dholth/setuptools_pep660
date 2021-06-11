@@ -1,0 +1,6 @@
+[build-system]
+requires = [
+    "wheel", "editables", "setuptools"
+]
+build-backend = "setuptools_pep660"
+backend-path = ["./src"]
