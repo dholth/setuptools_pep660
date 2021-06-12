@@ -22,6 +22,9 @@ setup(
     install_requires=[
         "setuptools",
     ],
+    entry_points={
+        "distutils.commands": ["editable_wheel = setuptools_pep660.editable_wheel:editable_wheel"]
+    },
     include_package_data=True,
     zip_safe=False,
 )
