@@ -21,9 +21,7 @@ setup(
     package_dir={
         "": "src"
     },  # "setuptools_pep660": "src/setuptools_pep660" would work but not as well
-    install_requires=[
-        "setuptools",
-    ],
+    install_requires=["setuptools", "wheel", "editables==0.2"],
     entry_points={
         "distutils.commands": [
             "editable_wheel = setuptools_pep660.editable_wheel:editable_wheel"
